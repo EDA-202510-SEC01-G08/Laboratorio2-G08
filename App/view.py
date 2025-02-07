@@ -95,7 +95,9 @@ def load_books_tags(app):
     :type app: logic
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    print("Cargando información de Book-Tags...")
+    booktags = load_books_tags(app)
+    print("Total de Book-Tags cargados: " + str(booktags))
 
 
 def first_book(app):
