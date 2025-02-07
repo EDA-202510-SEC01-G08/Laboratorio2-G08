@@ -105,7 +105,8 @@ def first_book(app):
     Devuelve el primer libro cargado en el conjunto de libros
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    first =logic.first_book(app)
+    return first
 
 
 def last_book(app):
@@ -139,6 +140,8 @@ def main():
             print("Total de libros cargados: " + str(books) + "\n")
 
             # TODO: Mods de Est-1 en el Lab 2
+            first =first_book(app)
+            print("Primer libro cargado:\n" +str(first) +"\n")
             first = None
 
             # TODO: Mods de Est-2 en el Lab 2
