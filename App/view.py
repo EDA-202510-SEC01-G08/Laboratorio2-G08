@@ -69,7 +69,7 @@ def load_books(app):
     :type app: logic
     """
     books = logic.load_books(app,
-                             "GoodReads/books-small.csv")
+                             "GoodReads/books.csv")
     return books
 
 
@@ -95,9 +95,9 @@ def load_books_tags(app):
     :type app: logic
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    print("Cargando información de Book-Tags...")
-    booktags = load_books_tags(app)
-    print("Total de Book-Tags cargados: " + str(booktags))
+    booktags = logic.load_books_tags(app, 
+                                        "GoodReads/book_tags.csv") 
+    return booktags
 
 
 def first_book(app):
